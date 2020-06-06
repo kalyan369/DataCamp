@@ -1,3 +1,5 @@
+import numpy as np
+import matplotlib.pyplot as plt
 '''
 Linear regression on appropriate Anscombe data
 
@@ -18,6 +20,8 @@ as a scatter plot. You do not need these arguments when plotting the theoretical
 -Hit 'Submit Answer' to see the plot!
 '''
 # Perform linear regression: a, b
+x = np.array([10.,  8., 13.,  9., 11., 14.,  6.,  4., 12.,  7.,  5.])
+y = np.array([ 8.04,  6.95,  7.58,  8.81,  8.33,  9.96,  7.24,  4.26, 10.84, 4.82,  5.68])
 a, b = np.polyfit(x, y, 1)
 
 # Print the slope and intercept
